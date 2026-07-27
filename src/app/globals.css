@@ -2,7 +2,30 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2c2c2a;
+
+  /* Brand — Blue (신뢰 · 주요 액션) */
+  --color-primary: #378add;
+  --color-primary-bg: #e6f1fb;
+  --color-primary-text: #0c447c;
+
+  /* 상태 컬러 (파싱 결과 표시용) */
+  --color-success-bg: #e1f5ee;
+  --color-success-text: #085041;
+  --color-warning-bg: #faeeda;
+  --color-warning-text: #854f0b;
+  --color-danger-bg: #fcebeb;
+  --color-danger-text: #791f1f;
+
+  /* 뉴트럴 */
+  --color-gray-900: #2c2c2a;
+  --color-gray-600: #5f5e5a;
+  --color-gray-100: #e5e3db;
+  --color-gray-50: #f1efe8;
+
+  /* 형태 */
+  --radius-input: 8px;
+  --radius-card: 12px;
 }
 
 @theme inline {
@@ -10,17 +33,29 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--color-primary);
+  --color-primary-bg: var(--color-primary-bg);
+  --color-primary-text: var(--color-primary-text);
+
+  --color-success-bg: var(--color-success-bg);
+  --color-success-text: var(--color-success-text);
+  --color-warning-bg: var(--color-warning-bg);
+  --color-warning-text: var(--color-warning-text);
+  --color-danger-bg: var(--color-danger-bg);
+  --color-danger-text: var(--color-danger-text);
+
+  --color-gray-900: var(--color-gray-900);
+  --color-gray-600: var(--color-gray-600);
+  --color-gray-100: var(--color-gray-100);
+  --color-gray-50: var(--color-gray-50);
+
+  --radius-input: var(--radius-input);
+  --radius-card: var(--radius-card);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
